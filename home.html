@@ -1,33 +1,144 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
-<head>
+  <head>
     <meta charset="utf-8" />
     <title>Responsive Navigation Menu</title>
     <link rel="stylesheet" href="style.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous" />
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <script src="https://kit.fontawesome.com/971955797b.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-</head>
+  </head>
 
-<body>
+  <body>
     <nav>
-        
-        <input type="checkbox" id="click" />
-        <label for="click" class="menu-btn">
-            <i class="fas fa-bars"></i>
-        </label>
-        <ul>
-            <li><a class="active" href="home.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <p>© 2021 by YouRock Studio. All Rights Reserved.</p>
-        </ul>
+      <div class="logo">
+        <img src="img/logo.png" width="50px" alt="">
+      </div>
+      <input type="checkbox" id="click" />
+      <label for="click" class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <ul>
+        <li><a class="active" href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <p>© 2021 by YouRock Studio. All Rights Reserved.</p>
+      </ul>
     </nav>
 
-</body>
+    <!--BANNER-->
+    <section id="banner">
+      <div class="container-fluid banner">
+        <div class="container banner-content col-lg-8">
+          <div class="text-center">
+            <p class="fs-1"></p>
+            <p class="d-md-block lead">Specialized of taking great ideas and turn them into great visuals.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--END BANNER-->
+
+    <!--Service-->
+    <section id="service">
+      <div class="container-fluid service">
+        <div class="container banner-content col-lg">
+          <div class="row text-center">
+            <div class="col-lg-4 mt-3">
+              <img src="" alt="Creativity" class="img-fluid float-left">
+              <h4>Creativity</h4>
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="col-lg-4 mt-3">
+              <img src="" alt="Strategy" class="img-fluid float-left">
+              <h4>Strategy</h4>
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="col-lg-4 mt-3">
+              <img src="" alt="Technology" class="img-fluid float-left">
+              <h4>Technology</h4>
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+        </div>
+    </section>
+    <!--END Service-->
+
+    <!--WORK-->
+    <section id="work">
+      <div class="container">
+        <div class="row text-center m-3">
+          <div class="col">
+            <h1 class="m-5">OUR WORK</h1>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-md-3 mb-3">
+            <div class="card">
+              <a href=""><img src="assets/images/work 1.jpg" class="card-img-top" alt="kodaso-work-1" /></a>
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 mb-3">
+            <div class="card">
+              <a href=""><img src="assets/images/work 1.jpg" class="card-img-top" alt="kodaso-work-1" /></a>
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 mb-3">
+            <div class="card">
+              <a href=""><img src="assets/images/work 1.jpg" class="card-img-top" alt="kodaso-work-1" /></a>
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <div class="card">
+              <a href=""><img src="assets/images/work 1.jpg" class="card-img-top" alt="kodaso-work-1" /></a>
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <div class="card">
+              <a href=""><img src="assets/images/work 1.jpg" class="card-img-top" alt="kodaso-work-1" /></a>
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <div class="card">
+              <a href=""><img src="assets/images/work 1.jpg" class="card-img-top" alt="kodaso-work-1" /></a>
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--END WORK-->
+  </body>
 
 </html>

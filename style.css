@@ -9,6 +9,32 @@ body {}
     font-family: "Poppins", sans-serif;
 }
 
+.service {
+    height: 80vh;
+    background: url(img/gambar2.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.banner {
+    height: 80vh;
+    background: url(img/gambar1.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.banner-content {
+    height: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 nav {
     display: flex;
     height: 80px;
@@ -30,8 +56,9 @@ nav ul {
     list-style: none;
 }
 
+nav .logo,
 nav ul li {
-    margin: 25px 5px;
+    margin: 20px 7px;
 }
 
 nav ul li a {
@@ -87,6 +114,10 @@ input[type="checkbox"] {
         text-align: center;
         display: block;
         transition: all 0.3s ease;
+    }
+
+    nav .logo {
+        margin-bottom: 20px;
     }
 
     #click:checked~ul {
