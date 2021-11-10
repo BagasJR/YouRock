@@ -1,285 +1,276 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
-
-body {}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
-.service {
- 
-    background: url(img/gambar2.png);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-}
-
-.banner {
-    height: 80vh;
-    background: url(img/gambar1.png);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-}
-
-.banner-content {
-    height: 100%;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+/*Navbar*/
 
 nav {
-    display: flex;
-    height: 80px;
-    width: 100%;
-    background: #1b1b1b;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 50px 0 100px;
-    flex-wrap: wrap;
+  display: flex;
+  height: 80px;
+  width: 100%;
+  background: #1b1b1b;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px 0 100px;
+  flex-wrap: wrap;
 }
 
 nav ul p {
-    display: none;
+  display: none;
 }
 
 nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
 }
 
 nav .logo,
 nav ul li {
-    margin: 20px 7px;
+  margin: 20px 7px;
 }
 
 nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: 500;
-    padding: 10px 15px;
-    border-radius: 5px;
-    letter-spacing: 1px;
-    transition: all 0.3s ease;
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px 15px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
 }
 
 nav ul li a.active,
 nav ul li a:hover {
-    color: #006486;
-    background: #fff;
+  color: #006486;
+  background: #fff;
 }
 
 nav .menu-btn i {
-    color: #fff;
-    font-size: 22px;
-    cursor: pointer;
-    display: none;
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
 }
 
 input[type="checkbox"] {
-    display: none;
+  display: none;
 }
 
+/*END NAVBAR*/
+
+/*SERVICE*/
+
+.service {
+  height: 80vh;
+  background: url(img/gambar2.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+/*BANNER*/
+.banner {
+  height: 80vh;
+  background: url(img/gambar1.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.banner-content {
+  height: 100%;
+  color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*END BANNER*/
+
+/*CONTACT*/
+.contact-from {
+  background-color: white;
+  padding: 48px 40px;
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.6);
+  margin-bottom: 15px;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+.contact-from h1 {
+  color: #07294d;
+  position: relative;
+  padding-bottom: 12px;
+}
+.contact-from h1::before {
+  content: "";
+  position: absolute;
+  width: 35px;
+  height: 2px;
+  background-color: #ffc600;
+  bottom: 0;
+  left: 0;
+}
+
+.contact-from .kodaso-form input,
+.contact-from .kodaso-form textarea {
+  width: 100%;
+  height: 50px;
+  padding: 0 20px;
+  border: 1px solid #a1a1a1;
+  border-radius: 5px;
+  color: #8a8a8a;
+  font-size: 15px;
+}
+.contact-from .kodaso-form textarea {
+  padding-top: 10px;
+  height: 100px;
+  resize: none;
+}
+.contact-from .kodaso-form {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.main-btn {
+  text-align: center;
+  border: 1px solid #ffc600;
+  padding: 10px 40px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #163153;
+  position: relative;
+  transition: 0.4s ease-in-out;
+  background-color: skyblue;
+  border-radius: 10px;
+}
+.main-btn:hover {
+  color: #ffc600;
+  border-color: #163153;
+  background-color: #163153;
+}
+.contact-address {
+  background-color: #252628;
+  padding: 20px 0;
+  border-radius: 10px;
+}
+.contact-address ul li {
+  padding-top: 30px;
+  list-style: none;
+}
+.contact-address ul li .kodaso-address {
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.contact-address ul li .kodaso-address .icon {
+  border-radius: 50%;
+  border: 1px solid #d83030;
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+  background: #d83030;
+}
+.contact-address ul li .kodaso-address .icon i {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+}
+.contact-address ul li .kodaso-address .cont {
+  padding-left: 20px;
+}
+.contact-address ul li .kodaso-address .cont p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #fff;
+  margin: 0px;
+  margin-right: 15px;
+}
+.color1 {
+  border: 1px solid #225888 !important;
+  background: #225888 !important;
+}
+
+.color2 {
+  border: 1px solid #f3a712 !important;
+  background: #f3a712 !important;
+}
+
+/*END CONTACT*/
+
+/*RESPONSIVE*/
+
 @media (max-width: 1000px) {
-    nav {
-        padding: 0 40px 0 50px;
-    }
+  nav {
+    padding: 0 40px 0 50px;
+  }
 }
 
 @media (max-width: 920px) {
-    nav .menu-btn i {
-        display: block;
-    }
+  nav .menu-btn i {
+    display: block;
+  }
 
-    #click:checked~.menu-btn i:before {
-        content: "\f00d";
-    }
+  #click:checked ~ .menu-btn i:before {
+    content: "\f00d";
+  }
 
-    nav ul {
-        position: fixed;
-        top: 80px;
-        left: -100%;
-        background: #111;
-        height: 100vh;
-        width: 100%;
-        text-align: center;
-        display: block;
-        transition: all 0.3s ease;
-    }
-
-    nav .logo {
-        margin-bottom: 20px;
-    }
-
-    #click:checked~ul {
-        left: 0;
-    }
-
-    nav ul li {
-        width: 100%;
-        margin: 40px 0;
-    }
-
-    nav ul li a {
-        width: 100%;
-        margin-left: -100%;
-        display: block;
-        font-size: 20px;
-        transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-        border-bottom: 1px solid rgb(255, 255, 255);
-    }
-
-    #click:checked~ul li a {
-        margin-left: 0px;
-    }
-
-    nav ul li a.active,
-    nav ul li a:hover {
-        background: none;
-        color: #006486;
-    }
-
-    nav ul p {
-        color: #fff;
-        margin-top: 200px;
-        display: block;
-    }
-}
-
-.content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    z-index: -1;
+  nav ul {
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    background: #111;
+    height: 100vh;
     width: 100%;
-    padding: 0 30px;
-    color: #1b1b1b;
-}
-
-.content div {
-    font-size: 40px;
-    font-weight: 700;
-}
-
-/*Contact*/
-
-.contact-from {
-    background-color: white;
-    padding: 48px 40px;
-    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.6);
-    margin-bottom: 15px;
-    margin-top: 10px;
-    border-radius: 10px;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
   }
-  .contact-from h1 {
-    color: #07294d;
-    position: relative;
-    padding-bottom: 12px;
+
+  nav .logo {
+    margin-bottom: 20px;
   }
-  .contact-from h1::before {
-    content: "";
-    position: absolute;
-    width: 35px;
-    height: 2px;
-    background-color: #ffc600;
-    bottom: 0;
+
+  #click:checked ~ ul {
     left: 0;
   }
-  
-  .contact-from .kodaso-form input,
-  .contact-from .kodaso-form textarea {
+
+  nav ul li {
     width: 100%;
-    height: 50px;
-    padding: 0 20px;
-    border: 1px solid #a1a1a1;
-    border-radius: 5px;
-    color: #8a8a8a;
-    font-size: 15px;
+    margin: 40px 0;
   }
-  .contact-from .kodaso-form textarea {
-    padding-top: 10px;
-    height: 100px;
-    resize: none;
+
+  nav ul li a {
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 20px;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    border-bottom: 1px solid rgb(255, 255, 255);
   }
-  .contact-from .kodaso-form {
-    margin-top: 10px;
-    margin-bottom: 10px;
+
+  #click:checked ~ ul li a {
+    margin-left: 0px;
   }
-  
-  .main-btn {
-    text-align: center;
-    border: 1px solid #ffc600;
-    padding: 10px 40px;
-    font-weight: 700;
-    line-height: 30px;
-    color: #163153;
-    position: relative;
-    transition: 0.4s ease-in-out;
-    background-color: skyblue;
-    border-radius: 10px;
+
+  nav ul li a.active,
+  nav ul li a:hover {
+    background: none;
+    color: #006486;
   }
-  .main-btn:hover {
-    color: #ffc600;
-    border-color: #163153;
-    background-color: #163153;
-  }
-  .contact-address {
-    background-color: #252628;
-    padding: 20px 0;
-    border-radius: 10px;
-    
-  }
-  .contact-address ul li {
-    padding-top: 30px;
-    list-style: none;
-  }
-  .contact-address ul li .kodaso-address {
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-  }
-  .contact-address ul li .kodaso-address .icon {
-    border-radius: 50%;
-    border: 1px solid #d83030;
+
+  nav ul p {
     color: #fff;
-    font-size: 18px;
-    text-align: center;
-    background: #d83030;
+    margin-top: 200px;
+    display: block;
   }
-  .contact-address ul li .kodaso-address .icon i {
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-  }
-  .contact-address ul li .kodaso-address .cont {
-    padding-left: 20px;
-  }
-  .contact-address ul li .kodaso-address .cont p {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 28px;
-    color: #fff;
-    margin: 0px;
-    margin-right: 15px;
-  }
-  .color1 {
-    border: 1px solid #225888 !important;
-    background: #225888 !important;
-  }
-  
-  .color2 {
-    border: 1px solid #f3a712 !important;
-    background: #f3a712 !important;
-  }
+}
