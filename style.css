@@ -231,19 +231,19 @@ input[type="checkbox"] {
 
 .main-btn {
     text-align: center;
-    border: 1px solid #ffc600;
+    border: 1px solid #000000;
     padding: 10px 40px;
     font-weight: 700;
     line-height: 30px;
-    color: #163153;
+    color: #ffffff;
     position: relative;
     transition: 0.4s ease-in-out;
-    background-color: skyblue;
+    background-color: #1472FF;
     border-radius: 20px;
 }
 
 .main-btn:hover {
-    color: #ffc600;
+    color: #ffffff;
     border-color: #163153;
     background-color: #163153;
 }
@@ -296,8 +296,8 @@ input[type="checkbox"] {
 }
 
 .color1 {
-    border: 1px solid #225888 !important;
-    background: #225888 !important;
+    border: 1px solid #f700ff !important;
+    background: #f700ff !important;
 }
 
 .color2 {
@@ -321,5 +321,5 @@ input[type="checkbox"] {
     line-height: 30px;
     position: relative;
     transition: 0.4s ease-in-out;
-    background-color: #026086;
+    background-color: #1472FF;
 }
